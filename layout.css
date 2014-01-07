@@ -1,0 +1,30 @@
+body {
+  background: lightblue;
+}
+
+.container h1 {
+  text-align: center;
+  color: green;
+  font-size: 3em;
+  font-weight: 1000;
+}
+
+.instructions {
+  margin: 0 1px 2px 7px;
+}
+
+.sound-things {
+  margin: 1em;
+  width: 100%;
+}
+
+.typed {
+  padding: 10px;
+  margin-top: 3em;
+  margin-left: 20%;
+  border: solid 1px;
+  width: 55%;
+  font-size: 2em;
+  display: block;
+  word-wrap: break-word;
+}
