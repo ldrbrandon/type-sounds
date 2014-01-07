@@ -19,10 +19,12 @@ body {
 }
 
 .typed {
+  position: relative;
   padding: 10px;
   margin-top: 3em;
   margin-left: 20%;
   border: solid 1px;
+  min-height: 1em;
   width: 55%;
   font-size: 2em;
   display: block;
