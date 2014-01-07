@@ -10,18 +10,30 @@ body {
 }
 
 .instructions {
-  margin: 0 1px 2px 7px;
+  margin: 0 1px 2px 5px;
 }
 
-.sound-things {
-  margin: 1em;
-  width: 100%;
+.note-boxes {
+  position: relative;
+  display: inline-block;
+  height: auto;
+  margin: 10px;
+}
+
+.notes {
+  position: relative;
+  float: left;
+  display: inline-block;
+  font-size: 2em;
+  border: solid 1px;
+  padding: 3px;
+  margin: 5px;
 }
 
 .typed {
   position: relative;
   padding: 10px;
-  margin-top: 3em;
+  margin-top: 0.5em;
   margin-left: 20%;
   border: solid 1px;
   min-height: 1em;

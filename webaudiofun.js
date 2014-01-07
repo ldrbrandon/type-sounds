@@ -103,7 +103,6 @@ var b1 = 123.48;
 
 var OscillatorClass = {
   playOsc: function(frequency) {
-    $(".analyser").text("");
     var oscillator, gainNode;
     oscillator = context.createOscillator();
     var currTime = context.currentTime;
@@ -302,6 +301,14 @@ var KeyTracker = {
   }
 }
 
+var NoteBoxes = {
+  findFreq: function(noteBox) {
+    var freq = noteBox.textContent.match(/\d+.\d+/)[0];
+    freq = Number(freq);
+    return freq;
+  }
+}
+
 $(document).ready(function(){
   init();
   // $(".explode-drag").draggable({revert: true});
@@ -310,6 +317,13 @@ $(document).ready(function(){
   //   }
   // });
   // alert("BLOWUP");
+  $('.notes').on('click', function() {
+    console.log("you clicked a note");
+    var that = this;
+    var freq = NoteBoxes.findFreq(that);
+    console.log(freq);
+    OscillatorClass.playOsc(freq);
+  });
 
   KeyTracker.listenToKeyPress();
 })
