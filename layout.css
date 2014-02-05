@@ -37,23 +37,9 @@ body {
   background-color: rgba(255,255,204,1);
 }
 
-@keyframes highlight {
-  50% {
-    background-color: rgba(11,156,49,.6), rgba(255,255,204,1);
-  }
-}
-@-moz-keyframes highlight {
-  50% {
-    background-color: rgba(11,156,49,.6), rgba(255,255,204,1);
-  }
-}
-@-webkit-keyframes highlight {
-  50% {
-    background-color: rgba(11,156,49,.6), rgba(255,255,204,1);
-  }
-}
-
 .notes:hover {
+  background: linear-gradient(bottom, rgba(11,156,49,.6), rgba(255,255,204,1));
+  background: -moz-linear-gradient(bottom, rgba(11,156,49,.6), rgba(255,255,204,1));
   background: -webkit-linear-gradient(bottom, rgba(11,156,49,.6), rgba(255,255,204,1));
 }
 

@@ -199,6 +199,7 @@ var KeyTracker = {
     var letter = String.fromCharCode(event.keyCode);
     // Print the letter they type to the screen
     console.log(letter+": "+event.keyCode);
+    // append letter to typed area
     $('.typed').append(letter);
     var freq;
     switch (letter){
