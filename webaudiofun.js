@@ -303,7 +303,7 @@ var KeyTracker = {
 
 var NoteBoxes = {
   findFreq: function(noteBox) {
-    var freq = noteBox.textContent.match(/\d+.\d+/)[0];
+    var freq = $(noteBox).data('freq');
     freq = Number(freq);
     return freq;
   }
