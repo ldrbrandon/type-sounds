@@ -199,6 +199,7 @@ var KeyTracker = {
     var letter = String.fromCharCode(event.keyCode);
     // Print the letter they type to the screen
     console.log(letter+": "+event.keyCode);
+    // append letter to typed area
     $('.typed').append(letter);
     var freq;
     switch (letter){
@@ -303,7 +304,7 @@ var KeyTracker = {
 
 var NoteBoxes = {
   findFreq: function(noteBox) {
-    var freq = noteBox.textContent.match(/\d+.\d+/)[0];
+    var freq = $(noteBox).data('freq');
     freq = Number(freq);
     return freq;
   }
